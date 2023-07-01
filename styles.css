@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "customFont";
+    src: url(Diamond_Creek_-_Demo.ttf);
+}
+
+* {
+    appearance: none;
+    outline: none;
+}
+
+body {
+    appearance: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+#leftSide {
+    background-image: url(theGreenElkLodge/PikesPeakArea_roadsAndMts.webp);
+    background-position: -300px -130px;
+    width: 40vw;
+    height: 100vh;
+    min-width: 300px;
+}
+
+.logoBanner {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(228, 202, 169, 0.4);
+    margin-top: 90px;
+    height: 125px;
+}
+
+img {
+    margin: 10px auto auto auto;
+    opacity: 1;
+    width: 5em;
+    height: 5em;
+}
+
+.titleCard {
+    color: rgb(38, 88, 37);
+    font-weight: 800;
+    align-self: center;
+    margin-bottom: 25px;
+    margin-top: 7px;
+    opacity: 1;
+    font-family: "customFont";
+    font-size: 25px;
+}
+
+#rightSide {
+    background-image: url(theGreenElkLodge/bedroomView_greenAccentWall.webp);
+    background-position: -100px 0px;
+    width: 60vw;
+    height: 100vh;
+}
+
+p, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 3px;
+}
+
+.signUp {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    max-width: 435px;
+}
+
+form {
+    background-color: rgba(213, 149, 64, 0.8);
+    margin: 15px 0px 10px 0px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #0D4D0D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 210px;
+}
+
+.inputFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr, 3);
+    width: 600px;
+}
+
+label {
+    font-size: 12px;
+    position: relative;
+}
+
+label > span {
+    position: absolute;
+    right: 3.8em;
+    top: 0em;
+    color: #7F0606;
+}
+
+.requiredMessage {
+    display: none;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 250px;
+    margin-bottom: 2px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(228, 202, 169);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 1.7px 1.7px 7px grey;
+}
+
+#passwordsMatchRequired {
+    position: absolute;
+    right: 3.8em;
+    top: 3.3em;
+}
+
+button {
+    margin: 20px 0px 2px 20px;
+    color: rgb(228, 202, 169);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(38, 88, 37);
+    font-weight: 600;
+    box-shadow: 2px 2px 5px rgb(228, 202, 169);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transition: transform 1s all;
+    transform: translate(0.4px, 0.4px);
+    box-shadow: none;
+}
+
+.accountAlready {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+a {
+    margin-top: 2px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+a:visited {
+    color: rgb(38, 88, 37);
+}
+
+a:focus {
+    color: rgb(228, 202, 169);
+}
