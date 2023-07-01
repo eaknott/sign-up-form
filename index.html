@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="icon" href="circleGreenLodgeLogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="leftSide">
+        <div class="logoBanner">
+            <img src="circleGreenLodgeLogo.png" alt="Green and yellow logo of forest lodge cabin in the mountains" class="logoImage">
+            <p class="titleCard">The Green Elk Lodge</p>
+        </div>
+    </div>
+    <div id="rightSide">
+        <p class="signUp">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up for the latest news!</p>
+        <form action="" id="form">
+            <h3>Let's do this!</h3>
+            <div class="inputFields">
+                <div class="firstName">
+                    <label for="firstName">FIRST NAME
+                        <span class="requiredMessage" id="firstNameRequired"></span>
+                        <input type="text" id="firstName" required />
+                    </label>
+                </div>
+                <div class="lastName">
+                    <label for="lastName">LAST NAME
+                        <span class="requiredMessage" id="lastNameRequired">*This field is required</span>
+                        <input type="text" id="lastName" required/>
+                    </label>
+                </div>
+                <div class="email">
+                    <label for="email">EMAIL
+                        <span class="requiredMessage" id="emailRequired">*This field is required</span>
+                        <input type="email" id="email" required />
+                    </label>
+                </div>
+                <div class="phoneNumber">
+                    <label for="phoneNumber">PHONE NUMBER
+                        <input type="tel" id="phoneNumber" />
+                    </label>
+                </div>
+                <div class="password">
+                    <label for="password">PASSWORD
+                        <input type="password" id="password" required>
+                        <span id="passwordsMatchRequired"></span>
+                    </label>
+                </div>
+                <div class="confirmPassword">
+                    <label for="confirmPassword">CONFIRM PASSWORD
+                        <input type="password" id="confirmPassword" required>
+                    </label>
+                </div>
+            </div>
+            
+        </form>
+        <button type="submit">Create Account</button>
+        <p class="accountAlready">Already have an account?</p>
+        <a href="">Log in</a>
+    </div>
+</body>
+</html>
